@@ -23,39 +23,45 @@
 
     <!--Menú-->
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: black; ">
+      <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand logo" href="../index.html"><img src="../media/logo-de-booyah-png-1024x492.png" alt=""></a>
-      
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="../index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="servicios.html">Servicios</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Presupuestos
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="presupuestos.html">Solicitar Presupuesto</a>
-                  <a class="dropdown-item" href="presupuestos.html">Buscar Presupuesto</a>
-                  <a class="dropdown-item" href="presupuestos.html">Entregar Presupuesto</a>
-                </div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          
+          <ul class="navbar-nav w-100 justify-content-evenly">
+              <li class="nav-item">
+                  <a class="nav-link active nav__links" style="color: lavender;" aria-current="page" href="../index.html">Inicio</a>
               </li>
-            <li class="nav-item">
-                <a class="nav-link" href="quienesomos.html">¿Quienés Somos?</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="perfil.html">Perfil</a>
-            </li>
+      
+              <li class="nav-item">
+                  <a class="nav-link nav__links" style="color: lavender;" href="../pages/servicios.html">Servicios</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle nav__links" style="color: lavender;" data-bs-toggle="dropdown" href="../pages/presupuestos.html#" role="button" aria-expanded="false">Presupuestos</a>
+                <ul class="dropdown-menu" style="background-color: lavender;">				   
+                    <li><a class="dropdown-item nav__links" style="color: black;" href="../pages/presupuestos.html">Solicitar Presupuesto</a></li>
+                        <li><a class="dropdown-item nav__links" style="color: black;" href="../pages/presupuestos.html">Buscar Presupuesto</a></li>
+                        <li><a class="dropdown-item nav__links" style="color: black;" href="../pages/quienesomos.html">Ayuda</a></li>
+                </ul>
+              </li>
+      
+              <li class="nav-item">
+                  <a class="nav-link nav__links" style="color: lavender;" href="../pages/quienesomos.html">¿Quienés Somos?</a>
+              </li>
+
+              <li class="nav-item">
+                  <a class="nav-link nav__links" style="color: lavender;" href="../pages/perfil.html">Perfil</a>
+              </li>
+
           </ul>
+
         </div>
-      </nav>
+      </div>
+    </nav>
     
       <script src="https://unpkg.com/@popperjs/core@2"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>   

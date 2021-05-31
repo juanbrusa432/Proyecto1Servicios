@@ -2,7 +2,7 @@
 *{
     margin: 0;
     padding: 0;
-   /* border: grey 1px dotted;*/
+   /*border: grey 1px dotted;*/ 
 }
 
                                 /*Propiedades del body TODAS LAS PAGINAS*/
@@ -41,17 +41,13 @@ article{
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-size: x-large;
     text-align: center;
-    padding: 70px;
+    padding: 80px;
+    top: 70px;
     
     
 
     
 }
-
-/*.logoBanner img{
-    display: none;
-    width: 250px;
-}*/
 
 .display h1{
     font-size: 2rem;
@@ -68,25 +64,24 @@ article{
     font-style: italic;
     text-transform: uppercase;
     font-weight: bolder;
-    text-align: center;
-
-    
+    text-align: center; 
     
 }
 
 /*MENU PRUEBA*/
 
 .logo img{
-    width: 100%;
+    width: 50%;
     height: 100%;
     max-width: 150px;
+    margin: 0px;
 }
 
 nav{
     background-color: black;
     color: lavender;
     width: 100%;
-    height: 70px;
+    height: 80px;
     
     display: flex;
     flex-flow: row nowrap;
@@ -143,9 +138,10 @@ article{
 .tarjetas{
     display: grid;
     margin: 10px;
+    margin-top: 80px;
     padding: 20px;
     grid-area: banner;
-
+    
 
     
     
@@ -189,6 +185,14 @@ article{
     border-bottom-right-radius: 0px;
 }
 
+.card-title{
+    background-color: yellow;
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center; 
+
+}
 .footer{
     background-color: #FEC700;
     color: black;
@@ -344,19 +348,19 @@ article{
    }
 
    header{
-       padding-top: 70px;
+       padding-top: 65px;
    }
 
    .formulario{
-       margin: 70px;
-       padding: 20px;
+       margin: 100px;
+       padding: 30px;
        border: 2px solid black;
        border-radius: 5px;
-      width: 600px  ;
-      height: 250px;
-      justify-self: center;
-      
-      background-color: orange;
+       width: 600px  ;
+       height: 260px;
+       justify-self: center;
+       top: 150px;
+       background-color: orange;
       
    }
 
@@ -498,6 +502,13 @@ article{
         margin-left: 25%;
     }
 
+
+    .tarjetas{
+        padding: 10px;
+        position: relative;
+    }
+
+
     .tarjetas__tamano{
         border: 0px;
         border-radius: 30px ;
@@ -507,6 +518,7 @@ article{
         height: 400;
         overflow: hidden;
         justify-self: center;
+        
         
     }
 
@@ -521,7 +533,7 @@ article{
         height: 100%;
         grid-area: footer;
         padding: 25px;
-        position: relative;
+        grid-area: footer;
         width: 100%;
 
     }
@@ -561,159 +573,6 @@ article{
 
 
 
-
-/* este nav no esta hecho para mobile first
-
-.MainMenu{
-    width: 100%;
-    height: 70px;
-    position: fixed;
-    top: 0px;
-    background-color: black;
-    color: lavender;
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    display: flex;
-    flex-flow: row;
-    justify-content: space-evenly;
-    
-    
-    
-    grid-area: nav;
-  
-}
-
-
-
-
-
-
-
-
-.MainMenu ul{
-    background-color: black;
-    display: flex;
-    flex-flow: row;
-    height: 70px;
-    
-
-}
-
-.MainMenu li{
-    text-align: center;
-    width: 150px;
-    justify-content: center;
-    
-    align-items: center;
-    
-    
-
-}
-
-.MainMenu ul ul{
-    display: none;
-    position: absolute;
-    background-color: transparent;
-}
-
-.MainMenu ul ul li{
-    display: flex;
-    flex-flow: column;
-    background-color: black;
-    position: relative;
-    top: 15px;
-    left: 0px;
-    height: 50px;
-    border: #FEC700 2px solid;
-    
-    
-   
-}
-
-.MainMenu ul ul li a:hover{
-    background-color: #FEC700;
-    color: black;
-    
-    
-}
-
-.MainMenu ul li{
-    display: flex;
-    flex-flow: row;
-    height: 70px;
-    
-}
-
-.MainMenu ul li:hover{
-    background-color: #FEC700;
-    color: black;
-    
-}
-
-.MainMenu a{
-    color: lavender;
-    text-decoration: none;
-    height: 70px;
-    
-    
-    background-color: black;
-    
-}
-
-.MainMenu ul li:hover ul{
-    display: flex;
-    flex-flow: column;
-    position: relative;
-    left: -58px;
-    bottom: -60px;
-    
-}
-*/
-
-/*PROPIEDADES DEL BUSCADOR
-
-.buscador{
-    background-color: lavender;
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    font-size: xx-large;
-    grid-area: buscador;
-    text-align: center;
-    padding: 50px;
-}
-
-.buscador h2{
-    padding-bottom: 30px;
-}
-
-.cajaBuscador{
-    width: 400px;
-    height: 50px;
-    font-size: 20px;
-    text-align: center;
-    background-color: #FEC700;
-    border-radius: 10px;
-    border: orange solid 3px;
-}
-
-footer{
-    background-color: #FEC700;
-    color: black;
-    padding: 25px;
-    grid-area: footer;
-}
-
-.grilla{
-    display: grid;
-    grid-template-areas: 
-    "header header header"
-    "nav nav nav"
-    "buscador buscador buscador"
-    "footer footer footer";
-    grid-template-columns: 2fr 6fr 2fr;
-    grid-template-rows: 250px 100px 1000px 250px;
-    
-}
-*/
 
 
 

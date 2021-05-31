@@ -19,50 +19,56 @@
 
     <!--Menú-->
     
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: black; ">
+      <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand logo" href="../index.html"><img src="../media/logo-de-booyah-png-1024x492.png" alt=""></a>
-      
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="../index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="servicios.html">Servicios</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Presupuestos
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="presupuestos.html">Solicitar Presupuesto</a>
-                  <a class="dropdown-item" href="presupuestos.html">Buscar Presupuesto</a>
-                  <a class="dropdown-item" href="presupuestos.html">Entregar Presupuesto</a>
-                </div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          
+          <ul class="navbar-nav w-100 justify-content-evenly">
+              <li class="nav-item">
+                  <a class="nav-link active nav__links" style="color: lavender;" aria-current="page" href="../index.html">Inicio</a>
               </li>
-            <li class="nav-item">
-                <a class="nav-link" href="quienesomos.html">¿Quienés Somos?</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="perfil.html">Perfil</a>
-            </li>
+      
+              <li class="nav-item">
+                  <a class="nav-link nav__links" style="color: lavender;" href="../pages/servicios.html">Servicios</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle nav__links" style="color: lavender;" data-bs-toggle="dropdown" href="../pages/presupuestos.html#" role="button" aria-expanded="false">Presupuestos</a>
+                <ul class="dropdown-menu" style="background-color: lavender;">				   
+                    <li><a class="dropdown-item nav__links" style="color: black;" href="../pages/presupuestos.html">Solicitar Presupuesto</a></li>
+                        <li><a class="dropdown-item nav__links" style="color: black;" href="../pages/presupuestos.html">Buscar Presupuesto</a></li>
+                        <li><a class="dropdown-item nav__links" style="color: black;" href="../pages/quienesomos.html">Ayuda</a></li>
+                </ul>
+              </li>
+      
+              <li class="nav-item">
+                  <a class="nav-link nav__links" style="color: lavender;" href="../pages/quienesomos.html">¿Quienés Somos?</a>
+              </li>
+
+              <li class="nav-item">
+                  <a class="nav-link nav__links" style="color: lavender;" href="../pages/perfil.html">Perfil</a>
+              </li>
+
           </ul>
+
         </div>
-      </nav>
+      </div>
+    </nav>
     <section class="tarjetas">
-        <div class="row row-cols-1 row-cols-md-3 g-4 tarjetas__centrado">
+         <div class="row row-cols-1 row-cols-md-3 g-4 tarjetas__centrado">
             <div class="col tarjetas__tamano tarjetas__radio">
               <div class="card h-100 tarjetas__radio">
                 <img src="../media/ComunityManager.png" class="card-img-top imagen__radio" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <h5 class="card-title">Comunity Manager</h5>
+                  <p class="card-text">Encontrá al CM que necesitas para que gestione las redes de tu empresa o emprendimiento.<br> Busca entre cientos de profesionales capacitados para elevar la comunicación de tu negocio a las nubes.</p>
                 </div>
                 <div class="card-footer">
-                  <small class="text-muted">Last updated 3 mins ago</small>
+                  <small class="text-muted">Última actualización hace 3 minutos.</small>
                 </div>
               </div>
             </div>
@@ -70,11 +76,11 @@
               <div class="card h-100 tarjetas__radio">
                 <img src="../media/desarrollo web.jpg" class="card-img-top imagen__radio" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                  <h5 class="card-title">Desarrollo Web</h5>
+                  <p class="card-text">Es sumamente importante en estos tiempos tener una pagina web, ya sea para mostrar lo que haces o directamente para vender tus productos. Encuentra aquí el profesional a tu medida.</p>
                 </div>
                 <div class="card-footer">
-                  <small class="text-muted">Last updated 3 mins ago</small>
+                  <small class="text-muted">Última actualización hace 2 minutos.</small>
                 </div>
               </div>
             </div>
@@ -82,11 +88,11 @@
               <div class="card h-100 tarjetas__radio">
                 <img src="../media/servicios-de-pintura.jpg" class="card-img-top imagen__radio" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  <h5 class="card-title">Pintores</h5>
+                  <p class="card-text">¿Tenes que entregar el departamento? ¿Querés remodelar tu casa? Buscá aquí entre cientos de pintores el que más se ajuste a tu presupuesto y necesidad.</p>
                 </div>
                 <div class="card-footer">
-                  <small class="text-muted">Last updated 3 mins ago</small>
+                  <small class="text-muted">Última actualización hace 5 minutos.</small>
                 </div>
               </div>
             </div>
@@ -94,11 +100,11 @@
                 <div class="card h-100 tarjetas__radio">
                   <img src="../media/encomiendas.jpg" class="card-img-top imagen__radio" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    <h5 class="card-title">Encomiendas</h5>
+                    <p class="card-text">¿Necesitas enviar algun paquete a otra localidad o bien, dentro de la misma? Buscá el transporte que se ajuste a vos.</p>
                   </div>
                   <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
+                    <small class="text-muted">Última actualización hace 4 minutos.</small>
                   </div>
                 </div>
             </div>
@@ -106,35 +112,35 @@
                 <div class="card h-100 tarjetas__radio">
                   <img src="../media/gasista.jpg" class="card-img-top imagen__radio" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    <h5 class="card-title">Gasistas</h5>
+                    <p class="card-text">Buscá entre cientos de gasistas matriculados, hacé un presupuesto sin cargo, contacta directamente con el profesional.</p>
                   </div>
                   <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
+                    <small class="text-muted">Última actualización hace 3 minutos.</small>
                   </div>
                 </div>
             </div>
               <div class="col tarjetas__tamano tarjetas__radio">
                 <div class="card h-100 tarjetas__radio">
-                  <img src="../media/servicio-de-plomeria.jpg" class="card-img-top imagen__radio" alt="...">
+                  <img src="../media/limpieza-por-horas.jpg" class="card-img-top imagen__radio" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    <h5 class="card-title">Limpieza</h5>
+                    <p class="card-text">¿Necesitas una persona de tiempo completo? ¿alguien que se encargue de la limpieza de tu hogar o tu empresa? Ecnontrala aquí.</p>
                   </div>
                   <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
+                    <small class="text-muted">Última actualización hace 5 minutos.</small>
                   </div>
                 </div>
             </div>
             <div class="col tarjetas__tamano tarjetas__radio">
                 <div class="card h-100 tarjetas__radio">
-                  <img src="../media/ar-condicionado.jpg" class="card-img-top imagen__radio" alt="...">
+                  <img src="../media/aure-acondicionado-splits-864x675.png" class="card-img-top imagen__radio" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    <h5 class="card-title">Climatización</h5>
+                    <p class="card-text">Encontrá un técnico que se encargue de instalar tu nuevo equipo o mismo el mantenimiento de uno que ya tengas</p>
                   </div>
                   <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
+                    <small class="text-muted">Última actualización hace 2 minutos.</small>
                   </div>
                 </div>
             </div>
@@ -142,19 +148,35 @@
                 <div class="card h-100 tarjetas__radio">
                   <img src="../media/servicio-de-plomeria.jpg" class="card-img-top imagen__radio" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    <h5 class="card-title">Plomería</h5>
+                    <p class="card-text">Si tenes algún problema de Plomería, aquí vas a encontrar al profesional que se ajuste a tu necesidad y presupuesto.</p>
                   </div>
                   <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
+                    <small class="text-muted">Última actualización hace 1 minuto.</small>
                   </div>
                 </div>
             </div>
-        </div>
+            <div class="col tarjetas__tamano tarjetas__radio">
+              <div class="card h-100 tarjetas__radio">
+                <img src="../media/electricista (1).jpg" class="card-img-top imagen__radio" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Electricistas</h5>
+                  <p class="card-text">Encontá el electricista matriculado que necesitas para realizar esa nueva instalación, o bien, refaccionar otra.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Última actualización hace 5 minutos.</small>
+                </div>
+              </div>
+            </div>
+          </div>
 
-    
+          
     </section> 
-     
+    <footer class="footer">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsam quam, architecto id ullam ab, veniam saepe praesentium molestias deleniti reprehenderit ipsum error laboriosam? Maiores repellat laboriosam mollitia atque a.
+      Cum nulla voluptatem omnis eaque asperiores odit laudantium delectus quas ipsa at? Inventore voluptas ut ea culpa error consectetur ipsam, incidunt nam quaerat odit distinctio. Ipsum, vel. Suscipit, eveniet temporibus.</p>
+
+  </footer>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     
